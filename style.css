@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #003333;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #005757;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #008080;
+}
+
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    background-color: #004d4d;
+    margin-top: 60px;
+}
+
+#portfolio {
+    background-color: #006666;
+}
+
+#kontakt {
+    background-color: #007777;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    gap: 20px;
+}
+
+.portfolio-button {
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.portfolio-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Prosjekter-seksjon */
+.projects-container {
+    display: flex; /* Gjør containeren fleksibel */
+    justify-content: space-around; /* Sentrer boksene horisontalt */
+    align-items: flex-end; /* Plasserer boksene nederst */
+    flex-wrap: wrap; /* Tillat radbryting på små skjermer */
+    gap: 20px; /* Mellomrom mellom boksene */
+    padding: 20px;
+    position: absolute; /* Gjør at boksene alltid er på bunnen */
+    bottom: 0; /* Plasser containeren nederst på siden */
+    width: 100%;
+    background-color: #004d4d;
+}
+
+.project-box {
+    background-color: #004d4d;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    min-width: 250px; /* Passer til små skjermer */
+    max-width: 300px; /* Begrens maksimal bredde */
+    text-align: center; /* Sentraliser teksten */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-box:hover {
+    transform: scale(1.05); /* Zoom-effekt ved hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #00cccc;
+}
+
+.project-box p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #cceeff;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px; /* Sett høyde for bildene */
+    object-fit: cover; /* Sikrer at bildene holder proporsjoner */
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.contact-section {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px; /* For å kompensere for navbaren */
+    color: white;
+    background-color: #004d4d;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-section h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #00cccc;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.contact-info a {
+    color: #00ffff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
